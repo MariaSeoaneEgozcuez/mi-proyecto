@@ -4,19 +4,19 @@ pipeline {
     stage('Build') {
       steps {
         git 'https://github.com/MariaSeoaneEgozcuez/mi-proyecto.git'
-        sh 'echo "Construyendo..."'
+        bat 'echo "Construyendo..."'
       }
     }
 
     stage('Test') {
       steps {
-        sh 'echo "Ejecutando pruebas..."'
+        bat 'echo "Ejecutando pruebas..."'
       }
     }
 
     stage('Deploy') {
       steps {
-        sh 'echo "Desplegando..."'
+        bat 'echo "Desplegando..."'
       }
     }
 
